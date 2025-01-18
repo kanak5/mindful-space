@@ -149,7 +149,7 @@ function Home() {
           <div className="mt-12 lg:mt-0">
             <img
               className="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
-              src="src\assets\m7.jpeg"
+              src="\assets\m7.jpeg"
               alt="Peaceful meditation"
             />
           </div>
@@ -168,7 +168,7 @@ function Home() {
               <div className="relative">
                 <img
                   className="h-48 w-full object-cover"
-                  src="src\assets\WhatsApp Image 2025-01-18 at 12.40.53_bb5cee72.jpg"
+                  src="\assets\WhatsApp Image 2025-01-18 at 12.40.53_bb5cee72.jpg"
                   alt="Andrew Huberman"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -186,7 +186,7 @@ function Home() {
               <div className="relative">
                 <img
                   className="h-48 w-full object-cover"
-                  src="src\assets\WhatsApp Image 2025-01-18 at 12.46.02_8622a341.jpg"
+                  src="\assets\WhatsApp Image 2025-01-18 at 12.46.02_8622a341.jpg"
                   alt="Osho"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -204,7 +204,7 @@ function Home() {
               <div className="relative">
                 <img
                   className="h-48 w-full object-cover"
-                  src="src\assets\WhatsApp Image 2025-01-18 at 12.46.01_13f3a2e1.jpg"
+                  src="\assets\WhatsApp Image 2025-01-18 at 12.46.01_13f3a2e1.jpg"
                   alt="Sadhguru"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
