@@ -154,12 +154,12 @@ function App() {
             loadEntry(date);
           }}
           className={`h-8 w-8 flex items-center justify-center rounded-full cursor-pointer relative
-            ${isCurrentDay ? 'bg-purple-500 text-white' : 'hover:bg-purple-100'}
+            ${isCurrentDay ? 'bg-teal-500 text-white' : 'hover:bg-teal-100'}
             ${hasEntry ? 'font-bold' : ''}`}
         >
           {day}
           {hasEntry && (
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-purple-500 rounded-full" />
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-teal-500 rounded-full" />
           )}
         </div>
       );
@@ -185,7 +185,7 @@ function App() {
       {/* Calendar Sidebar */}
       <div className="w-80 bg-white shadow-lg p-6 flex flex-col gap-4">
         <div className="flex items-center justify-between mb-4">
-          <Calendar className="w-5 h-5 text-purple-500" />
+          <Calendar className="w-5 h-5 text-teal-500" />
           <h2 className="text-lg font-semibold text-gray-800">Calendar</h2>
         </div>
         
@@ -208,8 +208,8 @@ function App() {
                 <button
                   key={year}
                   onClick={() => handleYearSelect(year)}
-                  className={`w-full p-2 text-left hover:bg-purple-50 ${
-                    year === selectedDate.getFullYear() ? 'bg-purple-100' : ''
+                  className={`w-full p-2 text-left hover:bg-teal-50 ${
+                    year === selectedDate.getFullYear() ? 'bg-teal-100' : ''
                   }`}
                 >
                   {year}
@@ -225,8 +225,8 @@ function App() {
                 <button
                   key={month}
                   onClick={() => handleMonthSelect(index)}
-                  className={`w-full p-2 text-left hover:bg-purple-50 ${
-                    index === selectedDate.getMonth() ? 'bg-purple-100' : ''
+                  className={`w-full p-2 text-left hover:bg-teal-50 ${
+                    index === selectedDate.getMonth() ? 'bg-teal-100' : ''
                   }`}
                 >
                   {month}
@@ -253,7 +253,7 @@ function App() {
       <div className="flex-1 p-8">
         <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-8">
           <h1 className="text-2xl font-semibold text-gray-800 mb-2 flex items-center gap-2">
-            Start journaling <PenLine className="w-6 h-6 text-purple-500 inline-block ml-2" />
+            Start journaling <PenLine className="w-6 h-6 text-teal-500 inline-block ml-2" />
           </h1>
           <p className="text-sm text-gray-500 mb-4">
             {formatDate(selectedDate)}
@@ -267,7 +267,7 @@ function App() {
                 });
               }
             }}
-            className="flex items-center gap-2 text-purple-600 hover:text-purple-700 mb-6"
+            className="flex items-center gap-2 text-teal-600 hover:text-teal-700 mb-6"
           >
             <MapPin className="w-4 h-4" />
             <span className="text-sm">{location || 'Add location'}</span>
@@ -276,7 +276,7 @@ function App() {
           <textarea
             value={journalContent}
             onChange={(e) => setJournalContent(e.target.value)}
-            className="w-full h-48 p-4 rounded-lg border border-gray-200 focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none"
+            className="w-full h-48 p-4 rounded-lg border border-gray-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent resize-none"
             placeholder="Start writing your story... or use voice input"
           />
 
@@ -287,13 +287,13 @@ function App() {
             <div className="flex gap-4">
               <button 
                 onClick={isRecording ? stopRecording : startRecording}
-                className={`p-3 ${isRecording ? 'bg-red-500' : 'bg-purple-500'} hover:bg-opacity-90 text-white rounded-full shadow-lg transform transition-transform hover:scale-105`}
+                className={`p-3 ${isRecording ? 'bg-red-500' : 'bg-teal-500'} hover:bg-opacity-90 text-white rounded-full shadow-lg transform transition-transform hover:scale-105`}
               >
                 <Mic className="w-5 h-5" />
               </button>
               <button 
                 onClick={saveEntry}
-                className="p-3 bg-purple-500 hover:bg-purple-600 text-white rounded-full shadow-lg transform transition-transform hover:scale-105 flex items-center gap-2"
+                className="p-3 bg-teal-500 hover:bg-teal-600 text-white rounded-full shadow-lg transform transition-transform hover:scale-105 flex items-center gap-2"
               >
                 <Save className="w-5 h-5" />
               </button>

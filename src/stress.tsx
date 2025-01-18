@@ -97,7 +97,7 @@ function App() {
         {data.map((hours, index) => (
           <div key={index} className="flex-1 flex flex-col items-center">
             <div 
-              className="w-full bg-blue-500 rounded-t-lg transition-all duration-300"
+              className="w-full bg-teal-500 rounded-t-lg transition-all duration-300"
               style={{ height: `${(hours / 4) * 100}%` }}
             />
             <span className="text-sm text-gray-600 mt-2">
@@ -116,7 +116,7 @@ function App() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-green-50">
       {/* Navigation */}
       <nav className="bg-white/80 backdrop-blur-sm fixed w-full z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -126,9 +126,9 @@ function App() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-3 py-2 text-sm font-medium transition-all duration-200 hover:text-blue-600 
+                  className={`px-3 py-2 text-sm font-medium transition-all duration-200 hover:text-teal-600 
                     ${activeTab === tab.id 
-                      ? 'text-blue-600 border-b-2 border-blue-600' 
+                      ? 'text-teal-600 border-b-2 border-teal-600' 
                       : 'text-gray-600'}`}
                 >
                   {tab.label}
@@ -140,10 +140,10 @@ function App() {
                 <div key={tab.id} className="relative group">
                   <button
                     onClick={() => setActiveTab(tab.id)}
-                    className={`px-3 py-2 text-sm font-medium transition-all duration-200 hover:text-blue-600 
+                    className={`px-3 py-2 text-sm font-medium transition-all duration-200 hover:text-teal-600 
                       flex items-center space-x-2
                       ${activeTab === tab.id 
-                        ? 'text-blue-600 border-b-2 border-blue-600' 
+                        ? 'text-teal-600 border-b-2 border-teal-600' 
                         : 'text-gray-600'}`}
                   >
                     <span>{tab.label}</span>
@@ -189,7 +189,7 @@ function App() {
                       {profileOptions.map((option, index) => (
                         <button
                           key={index}
-                          className="w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 
+                          className="w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-teal-50 
                             transition-colors duration-150 first:rounded-t-xl last:rounded-b-xl"
                         >
                           {option}
@@ -212,12 +212,12 @@ function App() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 space-y-6">
             <h1 className="text-5xl font-bold text-gray-900 leading-tight">
-              Stress & Anxiety <span className="text-blue-600">Free.</span>
+              Stress & Anxiety <span className="text-teal-600">Free.</span>
             </h1>
             <p className="text-lg text-gray-600 max-w-md">
               Take control of your mental well-being with our scientifically proven techniques for stress and anxiety management.
             </p>
-            <button className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-3 rounded-full 
+            <button className="bg-gradient-to-r from-teal-600 to-teal-500 text-white px-8 py-3 rounded-full 
               font-medium transform transition-all duration-200 hover:scale-105 hover:shadow-lg">
               Explore Now
             </button>
@@ -235,7 +235,7 @@ function App() {
       {/* Main Content */}
       <div className="bg-white/80 backdrop-blur-sm py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-3xl font-bold text-center text-teal-600 mb-12">
             Remove Your Stress
           </h2>
           
@@ -244,7 +244,7 @@ function App() {
             <div className="relative group">
               <button
                 onClick={() => setActiveSection(activeSection === 'quick-relief' ? null : 'quick-relief')}
-                className="w-full bg-gradient-to-br from-pink-500 to-rose-500 text-white p-6 rounded-xl shadow-lg
+                className="w-full bg-gradient-to-br from-teal-500 to-rose-500 text-white p-6 rounded-xl shadow-lg
                   transform transition-all duration-200 hover:scale-105 hover:shadow-xl
                   flex flex-col items-center space-y-3"
               >
@@ -274,7 +274,7 @@ function App() {
             <div className="relative group">
               <button
                 onClick={() => setActiveSection(activeSection === 'breathing' ? null : 'breathing')}
-                className="w-full bg-gradient-to-br from-blue-500 to-cyan-500 text-white p-6 rounded-xl shadow-lg
+                className="w-full bg-gradient-to-br from-teal-500 to-rose-500 text-white p-6 rounded-xl shadow-lg
                   transform transition-all duration-200 hover:scale-105 hover:shadow-xl
                   flex flex-col items-center space-y-3"
               >
@@ -304,7 +304,7 @@ function App() {
             <div className="relative group">
               <button
                 onClick={() => setActiveSection(activeSection === 'practical' ? null : 'practical')}
-                className="w-full bg-gradient-to-br from-green-500 to-emerald-500 text-white p-6 rounded-xl shadow-lg
+                className="w-full bg-gradient-to-br from-teal-500 to-rose-500 text-white p-6 rounded-xl shadow-lg
                   transform transition-all duration-200 hover:scale-105 hover:shadow-xl
                   flex flex-col items-center space-y-3"
               >
@@ -373,15 +373,15 @@ function App() {
               {/* Breathing Clock */}
               <div className="mb-12 flex justify-center">
                 <div className="relative w-48 h-48">
-                  <div className="absolute inset-0 rounded-full border-4 border-blue-200" />
+                  <div className="absolute inset-0 rounded-full border-4 border-teal-200" />
                   <div 
-                    className="absolute inset-0 rounded-full border-4 border-blue-500 transition-all duration-100"
+                    className="absolute inset-0 rounded-full border-4 border-teal-500 transition-all duration-100"
                     style={{
                       clipPath: `polygon(50% 50%, 50% 0, ${50 + 50 * Math.cos((breathingProgress / 100) * 2 * Math.PI - Math.PI/2)}% ${50 + 50 * Math.sin((breathingProgress / 100) * 2 * Math.PI - Math.PI/2)}%, 50% 50%)`
                     }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-lg font-medium text-blue-600">
+                    <span className="text-lg font-medium text-teal-600">
                       {breathingPhase === 'in' ? 'Breathe In' : 'Breathe Out'}
                     </span>
                   </div>
@@ -399,11 +399,11 @@ function App() {
                     className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow
                       flex flex-col items-center space-y-4"
                   >
-                    <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center">
                       {currentAudio === `breathing-${audio.id}` && isPlaying ? (
-                        <Pause size={24} className="text-blue-600" />
+                        <Pause size={24} className="text-teal-600" />
                       ) : (
-                        <Play size={24} className="text-blue-600" />
+                        <Play size={24} className="text-teal-600" />
                       )}
                     </div>
                     <div className="text-center">
@@ -470,8 +470,8 @@ function App() {
               </button>
               <button
                 onClick={() => setIsPlaying(!isPlaying)}
-                className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center
-                  hover:bg-blue-700 transition-colors"
+                className="w-10 h-10 rounded-full bg-teal-600 text-white flex items-center justify-center
+                  hover:bg-teal-700 transition-colors"
               >
                 {isPlaying ? <Pause size={20} /> : <Play size={20} />}
               </button>
@@ -480,7 +480,7 @@ function App() {
               </button>
               <div className="flex-1">
                 <div className="h-2 bg-gray-200 rounded-full">
-                  <div className="h-full w-1/3 bg-blue-600 rounded-full" />
+                  <div className="h-full w-1/3 bg-teal-600 rounded-full" />
                 </div>
               </div>
             </div>

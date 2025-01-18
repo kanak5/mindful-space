@@ -112,20 +112,20 @@ function App() {
       {/* Header Section */}
       <header className="container mx-auto px-4 pt-20 pb-32 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-6xl font-bold text-gray-800 mb-6">Meditation</h1>
-          <p className="text-gray-600 text-lg mb-6">
+          <h1 className="text-6xl font-bold text-teal-500 mb-6">Meditation</h1>
+          <p className="text-black-600 text-lg mb-6">
             Meditation is a journey inward, a practice that allows you to find peace and clarity in the present moment. 
             Through regular meditation, you can reduce stress, improve focus, and cultivate a deeper understanding of yourself.
           </p>
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-[1px] flex-1 bg-gray-300"></div>
-            <p className="text-gray-600 text-lg">Find your inner peace</p>
-            <div className="h-[1px] flex-1 bg-gray-300"></div>
+            <div className="h-[1px] flex-1 bg-teal-300"></div>
+            <p className="text-teal-600 text-lg">Find your inner peace</p>
+            <div className="h-[1px] flex-1 bg-teal-300"></div>
           </div>
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0">
           <img 
-            src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=80"
+            src="src\imaage\meditation.jpg"
             alt="Meditation"
             className="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
           />
@@ -134,7 +134,7 @@ function App() {
 
       {/* Interactive Features Section */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Begin Your Journey</h2>
+        <h2 className="text-4xl font-bold text-teal-600 mb-12 text-center">Begin Your Journey</h2>
         
         {/* Feature Boxes Container */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -146,7 +146,7 @@ function App() {
                 className="w-full flex items-center gap-3 px-8 py-4 rounded-full bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
                 <Headphones className="w-6 h-6" />
-                <span className="font-medium text-gray-700">Guided Meditation</span>
+                <span className="font-medium text-teal-700">Guided Meditation</span>
               </button>
               {/* Hover Card */}
               <div className="opacity-0 group-hover:opacity-100 absolute top-full left-0 mt-4 w-full bg-white p-6 rounded-xl shadow-xl transition-opacity duration-300 z-10">
@@ -157,8 +157,8 @@ function App() {
                     className="w-24 h-24 rounded-lg object-cover"
                   />
                   <div className="text-left">
-                    <h3 className="font-semibold text-gray-800 mb-2">Guided Meditation</h3>
-                    <p className="text-gray-600 text-sm">
+                    <h3 className="font-semibold text-teal-800 mb-2">Guided Meditation</h3>
+                    <p className="text-teal-600 text-sm">
                       Follow along with expert-led meditation sessions designed to help you relax, 
                       focus, and find inner peace.
                     </p>
@@ -177,14 +177,14 @@ function App() {
                     className={`flex items-center justify-between p-4 rounded-lg transition-all duration-300 ${
                       currentAudioIndex === index 
                         ? 'bg-indigo-100 text-indigo-700' 
-                        : 'bg-gray-50 hover:bg-gray-100'
+                        : 'bg-teal-50 hover:bg-teal-100'
                     }`}
                   >
                     <div className="flex items-center gap-4">
                       <Play className="w-5 h-5" />
                       <span className="font-medium">{meditation.title}</span>
                     </div>
-                    <span className="text-sm text-gray-500">{meditation.duration}</span>
+                    <span className="text-sm text-teal-500">{meditation.duration}</span>
                   </button>
                 ))}
               </div>
@@ -199,7 +199,7 @@ function App() {
                 className="w-full flex items-center gap-3 px-8 py-4 rounded-full bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
                 <BarChart3 className="w-6 h-6" />
-                <span className="font-medium text-gray-700">Meditation Tracker</span>
+                <span className="font-medium text-teal-700">Meditation Tracker</span>
               </button>
               {/* Hover Card */}
               <div className="opacity-0 group-hover:opacity-100 absolute top-full left-0 mt-4 w-full bg-white p-6 rounded-xl shadow-xl transition-opacity duration-300 z-10">
@@ -210,8 +210,8 @@ function App() {
                     className="w-24 h-24 rounded-lg object-cover"
                   />
                   <div className="text-left">
-                    <h3 className="font-semibold text-gray-800 mb-2">Track Your Progress</h3>
-                    <p className="text-gray-600 text-sm">
+                    <h3 className="font-semibold text-teal-800 mb-2">Track Your Progress</h3>
+                    <p className="text-teal-600 text-sm">
                       Monitor your meditation journey, set goals, and maintain consistency 
                       with our easy-to-use tracking tools.
                     </p>
@@ -245,7 +245,7 @@ function App() {
                           setCurrentTime(0);
                           setSelectedTimer(0);
                         }}
-                        className="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors"
+                        className="px-6 py-2 bg-teal-200 text-teal-700 rounded-full hover:bg-teal-300 transition-colors"
                       >
                         Reset
                       </button>
@@ -262,7 +262,7 @@ function App() {
                           className={`p-4 rounded-xl transition-all duration-300 ${
                             selectedTimer === minutes
                               ? 'bg-indigo-100 text-indigo-700'
-                              : 'bg-gray-50 hover:bg-gray-100'
+                              : 'bg-teal-50 hover:bg-teal-100'
                           }`}
                         >
                           <Clock className="w-6 h-6 mx-auto mb-2" />
@@ -276,10 +276,10 @@ function App() {
                   <div className="flex items-center justify-center">
                     <div className="w-32 h-32 rounded-full border-8 border-indigo-600 flex items-center justify-center">
                       <div className="text-center">
-                        <div className="text-xl font-bold text-gray-800">
+                        <div className="text-xl font-bold text-teal-800">
                           {currentClockTime.toLocaleTimeString()}
                         </div>
-                        <div className="text-xs text-gray-500">
+                        <div className="text-xs text-teal-500">
                           {currentClockTime.toLocaleDateString()}
                         </div>
                       </div>
@@ -298,7 +298,7 @@ function App() {
                 className="w-full flex items-center gap-3 px-8 py-4 rounded-full bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
                 <BookOpen className="w-6 h-6" />
-                <span className="font-medium text-gray-700">Meditation Techniques</span>
+                <span className="font-medium text-teal-700">Meditation Techniques</span>
               </button>
               {/* Hover Card */}
               <div className="opacity-0 group-hover:opacity-100 absolute top-full left-0 mt-4 w-full bg-white p-6 rounded-xl shadow-xl transition-opacity duration-300 z-10">
@@ -309,8 +309,8 @@ function App() {
                     className="w-24 h-24 rounded-lg object-cover"
                   />
                   <div className="text-left">
-                    <h3 className="font-semibold text-gray-800 mb-2">Learn Techniques</h3>
-                    <p className="text-gray-600 text-sm">
+                    <h3 className="font-semibold text-teal-800 mb-2">Learn Techniques</h3>
+                    <p className="text-teal-600 text-sm">
                       Discover various meditation methods and find the perfect 
                       practice that resonates with you.
                     </p>
@@ -343,7 +343,7 @@ function App() {
 
                 {/* Related Articles */}
                 <div className="border-t pt-6">
-                  <h4 className="text-xl font-semibold text-gray-800 mb-4">Related Articles</h4>
+                  <h4 className="text-xl font-semibold text-teal-800 mb-4">Related Articles</h4>
                   <div className="grid gap-4">
                     {articles.map((article, index) => (
                       <a
@@ -351,10 +351,10 @@ function App() {
                         href={article.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                        className="flex items-center gap-4 p-4 bg-teal-50 rounded-lg hover:bg-teal-100 transition-colors"
                       >
                         <BookOpen className="w-5 h-5 text-indigo-600" />
-                        <span className="text-gray-700 hover:text-indigo-600 transition-colors">
+                        <span className="text-teal-700 hover:text-indigo-600 transition-colors">
                           {article.title}
                         </span>
                       </a>
@@ -368,7 +368,7 @@ function App() {
 
         {/* Stats Section */}
         <div className="bg-white p-8 rounded-2xl shadow-lg">
-          <h2 className="text-2xl font-bold text-gray-800 mb-8">Your Stats</h2>
+          <h2 className="text-2xl font-bold text-teal-800 mb-8">Your Stats</h2>
           <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={weeklyStats}>
@@ -394,16 +394,16 @@ function App() {
                 className="w-12 h-12 rounded-lg object-cover"
               />
               <div>
-                <h4 className="font-medium text-gray-800">
+                <h4 className="font-medium text-teal-800">
                   {guidedMeditations[currentAudioIndex].title}
                 </h4>
-                <p className="text-sm text-gray-500">Guided Meditation</p>
+                <p className="text-sm text-teal-500">Guided Meditation</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <button 
                 onClick={() => setCurrentAudioIndex(prev => Math.max(0, prev - 1))}
-                className="p-2 hover:bg-gray-100 rounded-full"
+                className="p-2 hover:bg-teal-100 rounded-full"
               >
                 <SkipBack className="w-5 h-5" />
               </button>
@@ -415,7 +415,7 @@ function App() {
               </button>
               <button 
                 onClick={() => setCurrentAudioIndex(prev => Math.min(guidedMeditations.length - 1, prev + 1))}
-                className="p-2 hover:bg-gray-100 rounded-full"
+                className="p-2 hover:bg-teal-100 rounded-full"
               >
                 <SkipForward className="w-5 h-5" />
               </button>
@@ -425,7 +425,7 @@ function App() {
                 setShowAudioPlayer(false);
                 setIsPlaying(false);
               }}
-              className="p-2 hover:bg-gray-100 rounded-full"
+              className="p-2 hover:bg-teal-100 rounded-full"
             >
               <X className="w-5 h-5" />
             </button>

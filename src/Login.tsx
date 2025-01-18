@@ -52,15 +52,15 @@ function Login() {
                     {menuItems.map((item, index) => (
                       <div
                         key={index}
-                        className="group p-4 rounded-lg border border-gray-100 hover:border-gray-200 hover:shadow-md transition-all duration-200 cursor-pointer"
+                        className="group p-4 rounded-lg border border-teal-100 hover:border-teal-200 hover:shadow-md transition-all duration-200 cursor-pointer"
                       >
                         <div className="flex items-center space-x-4">
-                          <div className="p-2 rounded-full bg-gray-50 group-hover:bg-gray-100 transition-colors">
-                            <item.icon className="w-6 h-6 text-gray-600" />
+                          <div className="p-2 rounded-full bg-teal-50 group-hover:bg-teal-100 transition-colors">
+                            <item.icon className="w-6 h-6 text-teal-600" />
                           </div>
                           <div>
-                            <h3 className="font-medium text-gray-900">{item.title}</h3>
-                            <p className="text-sm text-gray-500">{item.description}</p>
+                            <h3 className="font-medium text-teal-900">{item.title}</h3>
+                            <p className="text-sm text-teal-500">{item.description}</p>
                           </div>
                         </div>
                       </div>
