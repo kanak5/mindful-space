@@ -125,7 +125,7 @@ function App() {
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0">
           <img 
-            src="src\imaage\meditation.jpg"
+            src="\assets\meditation.jpg"
             alt="Meditation"
             className="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
           />
