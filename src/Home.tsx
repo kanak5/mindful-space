@@ -103,7 +103,7 @@ function Home() {
         <div className="absolute inset-0 overflow-hidden">
           <img
             className="w-full h-[500px] object-cover opacity-60"
-            src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            src="https://4kwallpapers.com/images/walls/thumbs_3t/16484.jpg"
             alt="Meditation landscape"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-gray-900/90" />
@@ -149,7 +149,7 @@ function Home() {
           <div className="mt-12 lg:mt-0">
             <img
               className="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
-              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1820&q=80"
+              src="src\imaage\m7.jpeg"
               alt="Peaceful meditation"
             />
           </div>
@@ -168,7 +168,7 @@ function Home() {
               <div className="relative">
                 <img
                   className="h-48 w-full object-cover"
-                  src="src\imaage\How Andrew Huberman Got America to Care About Science.jpeg"
+                  src="src\imaage\WhatsApp Image 2025-01-18 at 12.40.53_bb5cee72.jpg"
                   alt="Andrew Huberman"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -186,7 +186,7 @@ function Home() {
               <div className="relative">
                 <img
                   className="h-48 w-full object-cover"
-                  src="https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                  src="src\imaage\WhatsApp Image 2025-01-18 at 12.46.02_8622a341.jpg"
                   alt="Osho"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -204,7 +204,7 @@ function Home() {
               <div className="relative">
                 <img
                   className="h-48 w-full object-cover"
-                  src="https://images.unsplash.com/photo-1514845505178-849cebf1a91d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                  src="src\imaage\WhatsApp Image 2025-01-18 at 12.46.01_13f3a2e1.jpg"
                   alt="Sadhguru"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
