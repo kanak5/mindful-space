@@ -5,6 +5,17 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Label } from "@/components/ui/label";
+import { auth } from "./firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+
+const handleSignUp = async (email, password) => {
+  try {
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    console.log("User signed up:", userCredential.user);
+  } catch (error) {
+    console.error("Error signing up:", error.message);
+  }
+};
 
 function Login() {
   const [isHovered, setIsHovered] = useState(false);
