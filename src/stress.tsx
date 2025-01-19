@@ -224,7 +224,7 @@ function App() {
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0">
             <img 
-              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+              src="src\imaage\WhatsApp Image 2025-01-19 at 03.21.53_0d811693.jpg"
               alt="Peaceful meditation"
               className="rounded-2xl shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-300"
             />

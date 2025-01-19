@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, BarChart3, BookOpen, Headphones, X, SkipForward, SkipBack, Clock } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import ReactPlayer from 'react-player';
+import { audioFiles1 } from './audioData1';
+import useSound from 'use-sound';
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -17,7 +20,7 @@ function App() {
   const clockRef = useRef<NodeJS.Timeout>();
 
   const guidedMeditations = [
-    { title: "Morning Meditation", duration: "10:00" },
+    { title: "Morning Meditation", duration: "10:00" , url: "src/music/guided meditaion/4-Minute Guided Mindfulness Meditation [TubeRipper.com].mp3"},
     { title: "Stress Relief", duration: "15:00" },
     { title: "Deep Sleep", duration: "20:00" },
     { title: "Anxiety Relief", duration: "12:00" },
@@ -29,22 +32,22 @@ function App() {
     {
       title: "Mindfulness Meditation",
       description: "Focus on the present moment through breath awareness",
-      image: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=800&q=80"
+      image: "src/imaage/WhatsApp Image 2025-01-19 at 03.06.37_ba4a38af.jpg"
     },
     {
       title: "Loving-Kindness Meditation",
       description: "Cultivate compassion and positive feelings towards others",
-      image: "https://images.unsplash.com/photo-1515023115689-589c33041d3c?auto=format&fit=crop&w=800&q=80"
+      image: "src/imaage/WhatsApp Image 2025-01-19 at 03.06.37_828bd5d9.jpg"
     },
     {
       title: "Body Scan Meditation",
       description: "Progressive relaxation through body awareness",
-      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
+      image: "src/imaage/WhatsApp Image 2025-01-19 at 03.06.38_c24ef951.jpg"
     },
     {
       title: "Transcendental Meditation",
       description: "Silent mantra meditation for deep relaxation",
-      image: "https://images.unsplash.com/photo-1497561813398-8fcc7a37b567?auto=format&fit=crop&w=800&q=80"
+      image: "src/imaage/WhatsApp Image 2025-01-19 at 03.06.38_baccee3e.jpg"
     }
   ];
 
