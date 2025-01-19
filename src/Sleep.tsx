@@ -42,25 +42,26 @@ const nsdrVideos = [
   {
     id: 1,
     title: 'Introduction to NSDR',
-    thumbnail: 'src/imaage/WhatsApp Image 2025-01-19 at 01.33.56_3194f897.jpg',
+    thumbnail: '/assets/nsdr2.jpg',
     url: 'https://youtu.be/D08e9UZFKdE?si=FBSVdscY11OxYGAf'
   },
   {
     id: 2,
     title: 'NSDR for Beginners',
-    thumbnail: 'src/imaage/WhatsApp Image 2025-01-19 at 01.33.56_9dde6771.jpg',
+    thumbnail: '/assets/nsdr1.jpg',
+
     url: 'https://youtu.be/D08e9UZFKdE?si=FBSVdscY11OxYGAf'
   },
   {
     id: 3,
     title: 'Advanced NSDR Techniques',
-    thumbnail: 'src/imaage/WhatsApp Image 2025-01-19 at 01.33.57_8814564d.jpg',
+    thumbnail: '/assets/nsdr3.jpg',
     url: 'https://youtu.be/hEypv90GzDE?si=j2dk2M-r6h99Wcn0'
   },
   {
     id: 4,
     title: 'NSDR Science Explained',
-    thumbnail: 'src/imaage/WhatsApp Image 2025-01-19 at 01.33.57_21b9fcb2.jpg',
+    thumbnail: '/assets/nsdr4.jpg',
     url: 'https://youtu.be/hTDQaYxdTBM?si=RrQwv6U6RLALBDEB'
   }
 ];
@@ -94,7 +95,7 @@ function ArticlesDropdown() {
           </div>
           <div className="ml-8 grid grid-cols-2 gap-6">
             <ArticleCard
-              image="https://images.unsplash.com/photo-1541480601022-2308c0f02487?auto=format&fit=crop&q=80&w=300"
+              image="\assets\justsleep.jpg"
               title="Sleep"
               href="#sleep-articles"
             />
@@ -330,7 +331,7 @@ function App() {
                 onClick={() => setCurrentView('sleepStories')}
                 hoverContent={{
                   text: "Sleep stories help you relax and drift off naturally. They use calming narratives and soothing voices to help quiet your mind.",
-                  image: "src/imaage/WhatsApp Image 2025-01-19 at 01.58.34_12d64f05.jpg"
+                  image: "/assets/justsleep.jpg"
                 }}
               />
               <FeatureCard

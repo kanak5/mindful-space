@@ -20,7 +20,7 @@ function App() {
   const clockRef = useRef<NodeJS.Timeout>();
 
   const guidedMeditations = [
-    { title: "Morning Meditation", duration: "10:00" , url: "src/music/guided meditaion/4-Minute Guided Mindfulness Meditation [TubeRipper.com].mp3"},
+    { title: "Morning Meditation", duration: "10:00" , url: "/music/guided meditaion/4-Minute Guided Mindfulness Meditation [TubeRipper.com].mp3"},
     { title: "Stress Relief", duration: "15:00" },
     { title: "Deep Sleep", duration: "20:00" },
     { title: "Anxiety Relief", duration: "12:00" },
@@ -32,22 +32,22 @@ function App() {
     {
       title: "Mindfulness Meditation",
       description: "Focus on the present moment through breath awareness",
-      image: "src/imaage/WhatsApp Image 2025-01-19 at 03.06.37_ba4a38af.jpg"
+      image: "/assets/medi2.jpg"
     },
     {
       title: "Loving-Kindness Meditation",
       description: "Cultivate compassion and positive feelings towards others",
-      image: "src/imaage/WhatsApp Image 2025-01-19 at 03.06.37_828bd5d9.jpg"
+      image: "/assets/kindmedi.jpg"
     },
     {
       title: "Body Scan Meditation",
       description: "Progressive relaxation through body awareness",
-      image: "src/imaage/WhatsApp Image 2025-01-19 at 03.06.38_c24ef951.jpg"
+      image: "/assets/bodyscan.jpg"
     },
     {
       title: "Transcendental Meditation",
       description: "Silent mantra meditation for deep relaxation",
-      image: "src/imaage/WhatsApp Image 2025-01-19 at 03.06.38_baccee3e.jpg"
+      image: "/assets/medi3.jpg"
     }
   ];
 
@@ -128,7 +128,7 @@ function App() {
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0">
           <img 
-            src="src\imaage\meditation.jpg"
+            src="\assets\meditation.jpg"
             alt="Meditation"
             className="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
           />

@@ -26,5 +26,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "src/audioData.ts", "src/audioData1.ts"]
 }
